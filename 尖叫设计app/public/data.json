@@ -1,0 +1,111 @@
+[
+  {
+    "img": "https://m.wowdsgn.com/static/img/furniture.png",
+    "bgimg": "https://img.wowdsgn.com/category/background/10.jpg?imageslim",
+    "type": "0",
+    "list": [
+      {
+        "name":"All",
+        "flag": true
+      },
+      {
+        "name": "沙发",
+        "id": "20",
+        "flag": false
+      },
+      {
+        "name": "椅凳",
+        "id": "21",
+        "flag": false
+
+      },
+      {
+        "name": "床",
+        "id": "2310",
+        "flag": false
+
+      },
+      {
+        "name": "柜架",
+        "id": "24",
+        "flag": false
+
+      },
+      {
+        "name": "餐桌",
+        "id": "2210",
+        "flag": false
+
+      },
+      {
+        "name": "茶几和边桌",
+        "id": "2211",
+        "flag": false
+
+      },
+      {
+        "name": "书桌",
+        "id": "2212",
+        "flag": false
+      }
+    ]
+  },
+  {
+    "img": "https://m.wowdsgn.com/static/img/household.png",
+    "bgimg": "https://img.wowdsgn.com/category/images/7c9e0b33-e76c-4726-88ce-29e57476689a_2dimension_1125x330.jpg?imageslim",
+    "type": "1",
+    "list": [
+      {
+        "name":"All",
+        "flag": true
+      },
+      {
+        "name": "灯具",
+        "id": "25",
+        "flag": false
+      },
+      {
+        "name": "用餐",
+        "id": "26",
+        "flag": false
+
+      },
+      {
+        "name": "时尚生活",
+        "id": "32",
+        "flag": false
+
+      },
+      {
+        "name": "收纳",
+        "id": "33",
+        "flag": false
+
+      },
+      {
+        "name": "烹饪",
+        "id": "27",
+        "flag": false
+
+      },
+      {
+        "name": "纺织品",
+        "id": "28",
+        "flag": false
+
+      },
+      {
+        "name": "家饰",
+        "id": "29",
+        "flag": false
+
+      },
+      {
+        "name": "卫浴",
+        "id": "31",
+        "flag": false
+
+      }
+    ]
+  }
+]

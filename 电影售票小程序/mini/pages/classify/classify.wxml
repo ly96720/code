@@ -1,0 +1,27 @@
+<view class="top">
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" data-value="{{index}}" options="{{ option1 }}" bindchange='change'/>
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+</van-dropdown-menu> 
+</view>
+<view class="bbox">
+<view class="box2" wx:for="{{showList.length?showList:cinemas}}" wx:key='index'>
+  <view class="dl" bindtap="buy" data-cinemaId="{{item.cinemaId}}">
+    <view  class="dd">
+      <text class="name">{{item.name}}</text>
+      <text class="price">￥{{m.fun(item.lowPrice)}}起</text>
+    </view>
+    <view  class="dd">
+      <view class="area">{{item.address}}</view>
+      <text class='i' clas="dis">距离千米</text>
+    </view>
+  </view>
+</view>
+</view>
+<wxs module='m'>
+  module.exports = {
+    fun: function(str) {
+      return str.toString().slice(0, 2)
+    }
+  }
+</wxs>

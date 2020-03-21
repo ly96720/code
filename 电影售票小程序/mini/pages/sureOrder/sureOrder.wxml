@@ -1,0 +1,12 @@
+<van-card
+  num="{{num}}"
+  price="{{price}}"
+  desc="{{seats}}"
+  title="{{filmName}}"
+  thumb="{{ poster }}"
+/>
+<van-submit-bar
+  price="{{totalPrice}}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>

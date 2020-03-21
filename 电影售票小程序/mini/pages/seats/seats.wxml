@@ -1,0 +1,25 @@
+<view class="Div">
+  <view class='Main'>
+    <view class="head">
+      <view class="title">
+      </view>
+      <view class="right">{{cinema.cinema.name}}</view>
+    </view>
+    <view class="name">
+      <view class="p1">{{cinema.film.name}}</view>
+      <text class="p2">{{showtime}}{{cinema.film.language}}{{cinema.imagery}}</text>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="b" wx:for="{{height}}" wx:for-index='i' wx:key='i'>
+    <view class="b" wx:for="{{width}}" wx:item='ele' wx:key='index'>
+      <text class="seat" bindtap="selectSeat" data-seat='{{[index,i]}}'>
+      {{}}
+   </text>
+    </view>
+  </view>
+</view>
+<van-button class='a' bind:click='buy'  color='' type="primary" block>
+ ￥{{totalPrice}} 购买
+</van-button>

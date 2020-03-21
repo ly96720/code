@@ -1,0 +1,132 @@
+.box1 {
+  position: fixed;
+  width: 100%;
+  height: 98rpx;
+  top: 0;
+  right: 0;
+  text-align: center;
+  background-color: #fff;
+  z-index: 2000;
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+}
+
+.div {
+  float: left;
+  line-height: 98rpx;
+  font-size: 28rpx;
+  color: #191a1b;
+}
+
+.border {
+  border: 2rpx solid #ff5f16 !important;
+}
+
+.color {
+  color: #ff5f16 !important;
+}
+
+.block {
+  display: none !important;
+  overflow: hidden !important;
+}
+
+.selected {
+  border-bottom: 2rpx dashed #ccc;
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  z-index: 999;
+  padding-left: 1rpx;
+}
+
+.item {
+  border: 2rpx solid rgba(210, 214, 220, 0.5);
+  border-radius: 4px;
+  width: 162rpx;
+  height: 6rpx;
+  font-size: 24rpx;
+  line-height: 6rpx;
+  background: #fff;
+  margin-bottom: 3rpx;
+  margin-right: 2rpx;
+  overflow: hidden;
+}
+
+.item1 {
+  border: 2rpx solid rgba(210, 214, 220, 0.5);
+  border-radius: 4px;
+  width: 162rpx;
+  height: 6rpx;
+  font-size: 24rpx;
+  line-height: 6rpx;
+  background: #fff;
+  margin-bottom: 3rpx;
+  margin-right: 2rpx;
+  overflow: hidden;
+}
+
+.box2 {
+  width: 96%;
+  overflow: hidden;
+  background: #fff;
+  padding-left: 30rpx;
+}
+
+.bbox {
+  color: #797d82
+}
+
+.dl {
+  position: relative;
+  z-index: 111;
+  top: 15rpx;
+  background-color: rgb(255, 255, 255);
+  width: 96%;
+  height: 90rpx;
+  padding: 40rpx 0;
+}
+
+.dd {
+  width: 100%;
+  height: 60rpx;
+  line-height: 30rpx;
+}
+
+.dis {
+  font-size: 20rpx;
+}
+
+.price {
+  color: #ff5f16;
+  font-size: 30rpx;
+  float: right;
+}
+
+.name {
+  font-size: 30rpx;
+  color: black
+}
+
+.area {
+  font-size: 24rpx;
+  text-align: left;
+  float: left;
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.i {
+  font-size: 24rpx;
+  float: right;
+}
+.top{
+  position: relative;
+  z-index: 2001
+}

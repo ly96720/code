@@ -1,0 +1,11 @@
+/* pages/sureOrder/sureOrder.wxss */
+.an-card__title{
+    line-height: 30rpx!important;
+    font-size: 30rpx!important;
+}
+.van-card__desc{
+    width: 100%!important;
+    text-overflow: ellipsis!important;
+    overflow: hidden!important;
+    white-space: nowrap!important;
+}

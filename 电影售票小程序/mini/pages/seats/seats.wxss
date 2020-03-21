@@ -1,0 +1,152 @@
+.van-button {
+  position: fixed !important;
+  bottom: 0 !important;
+  background-color: #ff5f16 !important;
+  border: none !important;
+}
+.visible{
+  visibility: hidden!important
+}
+.b{
+  display: inline-block;
+}
+.icon-left{
+  display: inline-block;
+  height: 26rpx;
+  width: 26rpx;
+}
+.Div {
+  margin: 0 auto;
+}
+
+.Main .buyed {
+  background: #f60;
+}
+
+.Main  .green {
+  background: green;
+}
+
+.Main .visable {
+  visibility: hidden;
+}
+
+.seat {
+  position: relative;
+  z-index: 9999;
+  display: inline-block;
+  border: 2rpx solid black !important;
+  width: 20rpx;
+  height: 20rpx;
+  transition: all 0.4s ease;
+  margin: 2rpx;
+}
+
+.pic {
+  display: inline-block;
+  border: 2rpx solid black !important;
+  background-color: #ff5f16;
+  width: 20rpx;
+  height: 20rpx;
+  transition: all 0.4s ease;
+}
+
+.selectSeat {
+  font-size: 10rpx;
+}
+.right{
+  text-align: center;
+}
+.screen {
+  transform: scale(1.5);
+  left: 241rpx;
+  position: relative;
+  z-index: 2;
+  height: 40rpx;
+  min-width: 380rpx;
+  font-size: 22rpx;
+  line-height: 40rpx;
+  border-radius: 2rpx 2rpx 16rpx 16rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #dbdbdb;
+  transform-origin: 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seats {
+  position: absolute;
+  left: 1rpx;
+  top: 250rpx;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.axion-middle {
+  position: absolute;
+  left: calc(50% + 2rpx);
+  border-left: 2rpx dotted #115cdf;
+  z-index: 2;
+  transform: scaleX(0.5);
+}
+
+.head {
+  background-color: #fff;
+  padding: 0 30rpx;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: grid;
+  grid-template-columns: 0 auto 88rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 34rpx;
+  color: #191a1b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.name {
+  width: 100%;
+  padding: 30rpx;
+  background-color: #fff;
+}
+
+.p1 {
+  text-align: left;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: #191a1b;
+}
+
+.p2 {
+  text-align: left;
+  font-size: 26rpx;
+  line-height: 38rpx;
+  margin-top: 8rpx;
+  color: #797d82;
+}
+
+button {
+  height: 90rpx;
+  width: 100%;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  padding: 28rpx 0;
+  text-align: center;
+  background-color: #ff5f16;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  z-index: 2;
+  border: none;
+}

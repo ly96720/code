@@ -1,0 +1,19 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+<view class="content">
+  <view class="selectCity">
+    <view class="GPS">GPS定位你所在的城市</view>
+    <view class="fail">定位失败</view>
+    <view class="GPS">热门城市</view>
+    <view class='ul'>
+      <text class='li' bindtap="jump" data-cityId="{{item.cityId}}" wx:key='index' wx:for='{{hotCity}}'>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+<van-index-bar wx:if='{{classifyCities.length!==0}}'>
+  <view wx:for="{{classifyCities}}" wx:for-index="i" wx:key="i" wx:for-item="ele">
+    <van-index-anchor index="{{ele.letter}}" />
+    <view bindtap="jump" data-cityId="{{item.cityId}}" wx:for="{{ele.city}}" wx:key="index" class="item">
+      {{item.name}}
+    </view>
+  </view>
+</van-index-bar>

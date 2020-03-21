@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/locate/locate",
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/news/news",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/buyMovie/buyMoive",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/sureOrder/sureOrder",
+    "pages/order/order",
+    "pages/seats/seats"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "sellseat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+     "color": "#797d82",
+     "selectedColor": "#ff5f16",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "/assets/img/11.png",
+        "selectedIconPath": "/assets/img/1.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "影院",
+        "iconPath": "/assets/img/22.png",
+        "selectedIconPath": "/assets/img/2.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "/assets/img/33.png",
+        "selectedIconPath": "/assets/img/3.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/assets/img/44.png",
+        "selectedIconPath": "/assets/img/4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

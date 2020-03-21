@@ -1,0 +1,70 @@
+.span {
+  font-size: 26rpx;
+  color: #ff5f16;
+  float: right;
+  margin: 50rpx;
+  text-decoration: underline;
+}
+.box{
+  padding-top: 136rpx;
+  background: white;
+  height: 100%;
+}
+.opacity {
+  width: 100%;
+  height: 1330rpx;
+  background-color: white;
+  opacity: 1 !important;
+}
+
+.time {
+  right: 80rpx !important;
+}
+
+.form {
+  position: relative;
+}
+
+
+i {
+  position: absolute;
+  right: 2.2rpx;
+  top: 0.45rpx;
+}
+
+input {
+  margin: 0 50rpx;
+  position: relative;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 40rpx 0;
+  width: 86.5%;
+  font-size: 30rpx;
+  color: #191a1b;
+  border: 0;
+  border-bottom: 2rpx solid #f4f4f4;
+}
+
+
+button {
+  line-height: 90rpx;
+  border: none;
+  font-size: 32rpx;
+  margin: 140rpx 50rpx 0;
+  border-radius: 6rpx;
+  text-align: center;
+  background-color: #ff5f16;
+  height: 88rpx;
+  color: #fff;
+  width: 650rpx;
+}
+
+.img {
+  display: block;
+  margin:0  auto ;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  width: 120rpx;
+  padding-left: 30rpx;
+}

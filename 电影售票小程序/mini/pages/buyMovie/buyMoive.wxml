@@ -1,0 +1,54 @@
+<view>
+  <view class="name">{{cinema.name}}</view>
+  <view class="addr">
+    <image class="icon-locate" src="/assets/img/locate.png" />
+    <span class="address">{{cinema.address}}</span>
+    <image class="icon-tel" src="/assets/img/tel.png" />
+  </view>
+</view>
+<view class="swiper">
+  <view class="bg" style="background:url({{bgImg}})"></view>
+  <image class='img1' src='/assets/img/sanjiao.png' alt="" />
+  <swiper bindchange='change'>
+    <swiper-item wx:for='{{films}}' wx:key='index'>
+      <image src="{{item.poster}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view>
+  <view class="mv_name">
+    <view class='view'>{{films[0].name}}
+      <text class='i'>{{films[0].grade}}</text>
+      <text class='span'>分</text>
+    </view>
+    <view class="i icon-you"></view>
+    <view class='p'>{{films[0].category}} | {{films[0].runtime}}分钟 | {{films[0].director}} |
+      <text class='span' wx:for='{{films[0].actors}}' wx:key='index'>{{item.name}} </text>
+    </view>
+  </view>
+</view>
+<van-tabs bind:click="onClick" ellipsis='{{false}}'>
+  <van-tab title="{{item}}" wx:for='{{showDate}}' wx:key='index'>
+    <view>
+      <view class="showtime" wx:for='{{showCinema}}' wx:for-index='i' wx:key='i'>
+        <view class="showM">
+          <view class="left">
+            <view>{{item.showAt}}</view>
+            <view>{{item.endAt}}散场</view>
+          </view>
+          <view class="middle">
+            <view>{{item.filmLanguage}}{{item.imagery}}</view>
+            <view>{{item.hallName}}</view>
+          </view>
+          <view class="right">
+            <view>￥{{item.salePrice}}</view>
+            <view bindtap="buy" data-scheduleId='{{item.scheduleId}}' >购票</view>
+          </view>
+        </view>
+      </view>
+      <view wx:if='{{!showCinema}}' class="view3" style="background:url('/assets/img/camera.png') no-repeat center 30rpx;">
+        暂无场次
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>

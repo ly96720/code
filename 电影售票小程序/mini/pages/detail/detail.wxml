@@ -1,0 +1,37 @@
+<view>
+  <image src="{{film.poster}}" alt="" />
+  <view class="intro">
+    <view class="name">{{film.name}}{{film.filmType.name}}
+      <text class="t1">分</text>
+      <text class="grade">{{film.grade}}</text>
+    </view>
+    <view class='p'>{{film.category}}</view>
+    <view class='p'>{{film.premiereAt}}上映</view>
+    <view class='p'>{{film.nation}} | {{film.runtime}}分钟</view>
+    <view  class="{{isHeight?'height':'introduce'}}">{{film.synopsis}}</view>
+    <image  class="{{isHeight?'xia translate':'xia'}}" bindtap="change"  src="{{img}}" alt='img' />
+  </view>
+  <view class="actor1">演职人员</view>
+  <scroll-view class="boxx" scroll-x='true'>
+    <view class='dl'  wx:for='{{film.actors}}' wx:key='index'>
+      <view class='dd' >
+        <image src="{{item.avatarAddress}}" alt='img'/>
+      </view>
+      <view class='dt'>{{item.name}}</view>
+      <view class='span'>{{item.role}}</view>
+    </view>
+  </scroll-view >
+  <view>
+    <view class="actor2">
+      <view class='span'>剧照</view>
+      <view class='all'>全部{{film.photos && '（' + film.photos.length + '）'}}
+        <image class="xia" src="/assets/img/右.png"></image>
+      </view>
+    </view>
+  </view>
+  <view  class="swiper-container2">
+    <scroll-view  class="box2" scroll-x='true' >
+      <image wx:key='index'  bindtap="click" data-i="{{index}}" src="{{item}}" wx:for='{{film.photos}}' wx:key='index'></image>
+    </scroll-view>
+  </view >
+</view>

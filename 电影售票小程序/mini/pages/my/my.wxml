@@ -1,0 +1,55 @@
+<view class="bbbox">
+  <view>
+    <view style="background:#ff8126">
+      <view class="aaa">
+        <image src="{{headerIcon?headerIcon:'/assets/img/header.png'}}" alt="" />
+        <text bindtap="login">{{username?username:"立即登录"}}</text>
+      </view>
+    </view>
+    <view class="box">
+      <view class='dl'>
+        <view class='dt'>
+          <image src="/assets/img/6.png" alt="" />
+        </view>
+        <view class='dd' bindtap="goOrder">电影订单</view>
+      </view>
+      <view class='dl'>
+        <view class='dt'>
+          <image src="/assets/img/7.png" alt="" />
+        </view>
+        <view class='dd'>商品订单</view>
+      </view>
+    </view>
+    <view class="main">
+      <view class='dl'>
+        <view class='dd'>
+          <image src="/assets/img/8.png" alt="" />
+        </view>
+        <view class='dt'>卖座券</view>
+        <image src="/assets/img/右.png" class="i"></image>
+      </view>
+      <view class='dl'>
+        <view class='dd'>
+          <image src="/assets/img/9.png" alt="" />
+        </view>
+        <view class='dt'>组合红包</view>
+        <image src="/assets/img/右.png" class="i"></image>
+      </view>
+      <view class='dl'>
+        <view class='dd'>
+          <image src="/assets/img/10.png" alt="" />
+        </view>
+        <view class='dt'>余额</view>
+        <text>￥0</text>
+        <image src="/assets/img/右.png" class="i"></image>
+      </view>
+      <view class='dl'>
+        <view class='dd'>
+          <image src="/assets/img/12.png" alt="" />
+        </view>
+        <view class='dt'>设置</view>
+        <image src="/assets/img/右.png" class="i"></image>
+      </view>
+    </view>
+  </view>
+</view>

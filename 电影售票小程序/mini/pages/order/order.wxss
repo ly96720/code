@@ -1,0 +1,4 @@
+/* pages/order/order.wxss */
+.van-card__content{
+  margin-left: 20rpx!important;
+}

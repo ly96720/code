@@ -1,0 +1,14 @@
+<view wx:for='{{list}}' wx:key='index'>
+<van-card 
+  num="{{item.num}}"
+  price="{{item.moviePrice}}"
+  title="{{item.movieName}}"
+  desc="{{item.seat}}"
+  thumb="{{ item.img }}"
+>
+  <view slot="footer">
+    <van-button size="mini" data-id='{{item.orderId}}' bindtap="tuipiao">退票</van-button>
+  </view>
+</van-card>
+</view>
+

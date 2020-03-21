@@ -1,0 +1,17 @@
+<view class="box">
+  <view>
+    <view>
+      <image src= "/assets/img/logo.png" class="img" alt="" />
+    </view>
+    <view class="form">
+      <view>
+        <input  data-type='user' bindinput="change" type="text" placeholder="手机号" />
+        <input data-type='pwd' bindinput="change"  type="password" class="password" placeholder="密码" />
+      </view>
+      <button bindtap="submit">
+        <view class="b">登录</view>
+      </button>
+    </view>
+    <navigator url="/pages/register/register" class='span'>没有账号？去注册</navigator>
+  </view>
+</view>

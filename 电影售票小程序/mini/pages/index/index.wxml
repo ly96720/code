@@ -1,0 +1,38 @@
+<view class='bigbox'>
+<swiper indicator-dots="true" autoplay interval="2000" circular>
+  <swiper-item>
+    <image src="/assets/img/1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/assets/img/2.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/assets/img/3.jpg"></image>
+  </swiper-item>
+</swiper>
+<van-tabs bind:change="onChange">
+  <van-tab  title="正在热映"></van-tab>
+  <van-tab title="即将上映"></van-tab>
+</van-tabs>
+<view wx:for="{{list}}" class="ul" wx:key='index'>
+    <image src="{{item.poster}}" alt='img'  bindtap="buy" data-filmId="{{item.filmId}}" />
+    <view class='box'>
+      <view>
+        <text class='title'>{{item.name}}</text>
+        <text class='type'>{{item.item.name}}</text>
+      </view>
+      <view>
+          <text class="{{item.isPresale?'same':'visible'}}">观众评分</text>
+          <text class='grade'>{{item.grade}}</text>
+      </view>
+      <view>
+        <text class='same'>主演：{{item.director}}</text>
+      </view>
+      <view>
+        <text class='same'>{{item.nation}} | {{item.runtime}}分钟</text>
+      </view>
+    </view>
+    <view bindtap="buy" data-filmId="{{item.filmId}}" class='buyticket' wx:if='{{item.isPresale}}'>购票</view>
+</view>
+    <view class="nomore">无更多电影</view>
+</view>
